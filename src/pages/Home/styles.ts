@@ -410,6 +410,7 @@ export const Brands = styled.div`
 
 export const Footer = styled.section`
   background: #282B30;
+  position: relative;
 
   div.container{
     display: flex;
@@ -494,5 +495,27 @@ export const Footer = styled.section`
         }
       }
     }
+  }
+`;
+
+export const BackToTop = styled.a`
+  width: 45px;
+  height: 40px;
+  border-radius: 6px;
+  opacity: .85;
+  position: absolute;
+  top: -80px;
+  right: 30px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  background: #282B30;
+  color: #ffffff;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+
+  &:hover{
+    opacity: 1;
   }
 `;

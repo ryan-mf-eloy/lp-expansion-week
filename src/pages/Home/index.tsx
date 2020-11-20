@@ -1,6 +1,6 @@
 import React, { MouseEvent } from 'react';
 
-import { FiChevronDown } from 'react-icons/fi';
+import { FiChevronDown, FiChevronUp } from 'react-icons/fi';
 
 import ResponsiveDevLogo from '../../assets/logo.svg';
 import ExpansionWeekLogo from '../../assets/expansion-week.svg';
@@ -23,7 +23,8 @@ import {
   Gradient,
   Header,
   Introduction,
-  Questions
+  Questions,
+  BackToTop
 } from './styles';
 
 const Home: React.FC  = () => {
@@ -39,7 +40,7 @@ const Home: React.FC  = () => {
   
   return (
    <>
-    <Header><img src={ResponsiveDevLogo} alt="DevResponsivo"/></Header>
+    <Header id="header"><img src={ResponsiveDevLogo} alt="DevResponsivo"/></Header>
 
     <main>
       <Introduction className="container">
@@ -152,6 +153,10 @@ const Home: React.FC  = () => {
     </main>
 
     <Footer>
+      <BackToTop onClick={event => handleScroll(event, "#header")}>
+        <FiChevronUp size={28} />
+      </BackToTop>
+
       <div className="container">
         <ul>
           <li>
