@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { MouseEvent } from 'react';
 
 import { FiChevronDown } from 'react-icons/fi';
 
@@ -27,8 +27,14 @@ import {
 } from './styles';
 
 const Home: React.FC  = () => {
-  const handleScroll = () => {
+  const handleScroll = (event: MouseEvent<HTMLAnchorElement>, section: string): void => {
+    event.preventDefault();
+    const sectionDestiny = document.querySelector<HTMLElement>(section);
 
+    window.scroll({
+      top: sectionDestiny?.offsetTop,
+      behavior: "smooth"
+    });
   }
   
   return (
@@ -44,7 +50,7 @@ const Home: React.FC  = () => {
           <p>Você fez diversos cursos, treinamentos, mentorias, leu todas as documentações da stack que você atua, ficou fluente em inglês e já desenvolveu um belo portfólio, mas  a pergunta é:</p>
           <strong><u>Como estão suas Soft Skills?</u></strong>
 
-          <a onClick={handleScroll} href="#accurentMarket">
+          <a  onClick={event => handleScroll(event, '#accurentMarket')} href="#accurentMarket">
             <Button>Continuar lendo</Button>
           </a>
         </div>
@@ -68,7 +74,7 @@ const Home: React.FC  = () => {
                 Hoje na maioria das vezes o programador precisa comunicar-se com frequência e com muitas pessoas, além de ter que exercer um enorme controle emocional para lidar bem sobre pressão e atender todos os objetivos de cada projeto.
               </p>
 
-              <a onClick={handleScroll} href="#questions">
+              <a onClick={event => handleScroll(event, '#questions')} href="#questions">
                 <Button secondary={true} icon={true} ><FiChevronDown size={28}/></Button>
               </a>
           </div>
