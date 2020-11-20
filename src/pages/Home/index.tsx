@@ -160,7 +160,7 @@ const Home: React.FC  = () => {
       <div className="container">
         <ul>
           <li>
-            <a href="https://" rel="noreferrer" target="_blank">
+            <a href="https://github.com/ryan-mf-eloy/lp-expansion-week/blob/main/LICENSE" rel="noreferrer" target="_blank">
               Licença MIT
             </a>
           </li>
