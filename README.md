@@ -9,3 +9,9 @@ Você fez diversos cursos, treinamentos, mentorias, leu todas as documentações
 Como estão suas Soft Skills?
 <br /><br />
 <img src="https://github.com/ryan-mf-eloy/lp-expansion-week/blob/main/src/assets/lp-print.png" />
+
+# Artigo no Linkedin
+https://www.linkedin.com/pulse/flexibilidade-saber-adaptar-se-%C3%A0s-mudan%C3%A7as-ryan-eloy/?trackingId=lqub%2BlL1SzmpE1Annz%2BR2w%3D%3D
+
+# Post no Linkedin
+https://www.linkedin.com/feed/update/urn%3Ali%3Aactivity%3A6735547098978168832/
