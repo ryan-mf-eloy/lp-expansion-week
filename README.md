@@ -10,6 +10,9 @@ Como estão suas Soft Skills?
 <br /><br />
 <img src="https://github.com/ryan-mf-eloy/lp-expansion-week/blob/main/src/assets/lp-print.png" />
 
+# Figma Prototype
+https://www.figma.com/file/gknLkXZXfDp1biIz5R9M5E/Landing-Page-Expansion-Week
+
 # Artigo no Linkedin
 https://www.linkedin.com/pulse/flexibilidade-saber-adaptar-se-%C3%A0s-mudan%C3%A7as-ryan-eloy/?trackingId=lqub%2BlL1SzmpE1Annz%2BR2w%3D%3D
 
