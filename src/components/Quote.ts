@@ -20,6 +20,14 @@ const Quote = styled.blockquote`
     color: #A8A8B3;
     font-style: normal;
   }
+
+  @media only screen and (max-width: 1430px){
+    font-size: 16px;
+  }
+
+  @media only screen and (max-width: 800px){
+    padding: 0 30px;
+  }
 `;
 
 export default Quote;

@@ -93,6 +93,10 @@ export const Introduction = styled.section`
       max-width: 740px;
     }
   }
+
+  @media only screen and (max-width: 800px){
+    padding: 0 30px;
+  }
 `;
 
 export const AccurentMarket = styled.section`
@@ -168,6 +172,10 @@ export const AccurentMarket = styled.section`
     flex-direction: column;
     margin: 70px 0 70px 0 !important;
 
+    button {
+      margin:0 auto;
+    }
+
     img {
       margin: 0 auto 50px auto;
       max-width: 500px;
@@ -181,6 +189,10 @@ export const AccurentMarket = styled.section`
     div.container {
       flex-direction: column;
     }
+  }
+
+  @media only screen and (max-width: 800px){
+    padding: 60px 30px;
   }
 `;
 
@@ -242,7 +254,7 @@ export const Questions = styled.section`
   @media only screen and (max-width: 1430px){
     h3 {
       font-size: 28px;
-      line-height: 25px;
+      line-height: 35px;
     }
 
     div.container img:first-child {
@@ -259,13 +271,38 @@ export const Questions = styled.section`
   @media only screen and (max-width: 1330px){
     div.container {
       flex-direction: column;
+      justify-content: center;
+
+      + div.container {
+        margin-top: 70px;
+      }
+
+      div.text-content{
+        max-width: 740px;
+        margin: 0 auto;
+        flex-direction: column;
+
+        &:first-child{
+          margin-left: auto;
+        }
+        &:last-child{
+          margin-left: auto;
+        }
+      }
     }
+
     div.container img:first-child {
       max-width: 317px;
+      margin-bottom: 50px;
     }
     div.container img:last-child {
       max-width: 280px;
+      margin-top: 50px;
     }
+  }
+
+  @media only screen and (max-width: 800px){
+    padding: 30px;
   }
 `;
 
@@ -311,7 +348,7 @@ export const Gradient = styled.section`
   @media only screen and (max-width: 1430px){
     h3 {
       font-size: 28px;
-      line-height: 25px;
+      line-height: 35px;
     }
 
     div.content {
@@ -322,6 +359,21 @@ export const Gradient = styled.section`
 
     p {
       font-size: 16px;
+    }
+  }
+
+  @media only screen and (max-width: 1000px){
+    div.content {
+      flex-direction:  column;
+
+      img {
+        max-width: 400px;
+      }
+
+      p {
+        max-width: 740px;
+        margin: 0 auto;
+      }
     }
   }
 `;
@@ -337,6 +389,21 @@ export const Brands = styled.div`
 
     img {
       max-width: 200px;
+    }
+  }
+
+  @media only screen and (max-width: 600px){
+    div.container {
+      img {
+        max-width: 160px;
+      }
+    }
+  }
+  @media only screen and (max-width: 450px){
+    div.container {
+      img {
+        max-width: 150px;
+      }
     }
   }
 `;
@@ -413,5 +480,19 @@ export const Footer = styled.section`
 
   @media only screen and (max-width: 1580px){
     padding: 0 50px
+  }
+
+  @media only screen and (max-width: 1050px){
+    div.container {
+      flex-direction: column;
+
+      div.brand {
+        margin: 20px auto;
+
+        span {
+          margin-top: 0;
+        }
+      }
+    }
   }
 `;

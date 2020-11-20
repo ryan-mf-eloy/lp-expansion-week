@@ -9,6 +9,21 @@ export default createGlobalStyle`
     -webkit-transition: all .2s;
   }
 
+  ::-webkit-scrollbar-track{
+    border-radius: 8px;
+    background-color: #424549;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    background-color: #424549;
+  }
+
+  ::-webkit-scrollbar-thumb{
+    border-radius: 8px;
+    background: linear-gradient(to bottom, #50FA7B, #6C63FF);
+  }
+
   p {
     font-size: 18px;
     line-height: 35px;
